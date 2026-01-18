@@ -1,6 +1,6 @@
 # 🚛 Split Delivery Vehicle Routing Problem (SD-VRP)
 
-> 🧩 *Projet d’Optimisation Combinatoire – École Centrale Casablanca*  
+> *Projet d’Optimisation Combinatoire – École Centrale Casablanca*  
 > Par **Youssef Khalfa**, **Ismail Achbani**, **Ayoub Hamouch**, **Rayane Yajjou**  
 > Encadré par **A. Ait El Cadi**
 
@@ -22,13 +22,13 @@ Ici, **un client peut être servi par plusieurs véhicules**, à condition que l
 Le but est de **minimiser la distance totale parcourue** par la flotte, tout en respectant les **contraintes de capacité**.
 
 Ce projet met en œuvre :
-- ✅ une **modélisation exacte (MILP)** avec le solveur **PuLP/CBC**
-- ⚙️ une **méta-heuristique Variable Neighborhood Search (VNS)** pour les grandes instances
-- 📈 une **analyse comparative** entre les deux approches sur **33 cas tests**
+-  une **modélisation exacte (MILP)** avec le solveur **PuLP/CBC**
+-  une **méta-heuristique Variable Neighborhood Search (VNS)** pour les grandes instances
+-  une **analyse comparative** entre les deux approches sur **33 cas tests**
 
 ---
 
-## 🧠 Aperçu conceptuel
+##  Aperçu conceptuel
 
 ```
 +-------------------------------------------------------------+
@@ -47,25 +47,25 @@ Ce projet met en œuvre :
 
 ---
 
-## 🧩 Structure du dépôt
+##  Structure du dépôt
 
 ```
 📦 SD-VRP/
 │
-├── 📄 README.md                 ← ce fichier
-├── 📜 rapport_sd_vrp.pdf        ← rapport complet du projet
-├── 📄 solveur.py                ← solveur exact (PuLP + CBC)
-├── 📓 SD_VRP_projet.ipynb       ← notebook explicatif + métaheuristique VNS
-├── 📁 Instances/                ← 33 cas tests (Case0 à Case32)
-├── 📁 SolutionsPulp/            ← fichiers de solutions générés
-└── 📄 Enonce_Projet.pdf         ← énoncé officiel du challenge
+├──  README.md                 ← ce fichier
+├──  rapport_sd_vrp.pdf        ← rapport complet du projet
+├──  solveur.py                ← solveur exact (PuLP + CBC)
+├──  SD_VRP_projet.ipynb       ← notebook explicatif + métaheuristique VNS
+├──  Instances/                ← 33 cas tests (Case0 à Case32)
+├──  SolutionsPulp/            ← fichiers de solutions générés
+└──  Enonce_Projet.pdf         ← énoncé officiel du challenge
 ```
 
 ---
 
-## ⚙️ Installation & Exécution
+##  Installation & Exécution
 
-### 🧰 Prérequis
+###  Prérequis
 
 - Python ≥ 3.8  
 - Bibliothèques :
@@ -76,7 +76,7 @@ Ce projet met en œuvre :
 
 ---
 
-### 🚀 Exécution du solveur exact (PuLP + CBC)
+###  Exécution du solveur exact (PuLP + CBC)
 
 1. Placez vos instances dans le dossier `/Instances` (format `.txt`)
 2. Lancez le script :
@@ -99,7 +99,7 @@ Truck loads: 9 6
 
 ---
 
-### 🧬 Exécution de la méta-heuristique VNS
+###  Exécution de la méta-heuristique VNS
 
 Dans le notebook `SD_VRP_projet.ipynb` :
 
@@ -123,7 +123,7 @@ Dans le notebook `SD_VRP_projet.ipynb` :
 
 ---
 
-## 🧩 Algorithmes utilisés
+##  Algorithmes utilisés
 
 | Approche | Type | Description | Avantage principal |
 |-----------|------|-------------|--------------------|
@@ -141,11 +141,11 @@ Dans le notebook `SD_VRP_projet.ipynb` :
 | Case1 | PuLP CBC | — | — | >1000 |
 | Case1 | VNS | 30726 | 12 | 12 |
 
-> 🧮 *Les heuristiques se montrent plus efficaces pour les instances volumineuses.*
+>  *Les heuristiques se montrent plus efficaces pour les instances volumineuses.*
 
 ---
 
-## 🧠 Leçons et perspectives
+##  Leçons et perspectives
 
 - Les **méthodes exactes** sont efficaces sur des cas réduits, mais peu scalables.  
 - Les **méta-heuristiques** (VNS, Tabu, Clarke & Wright) offrent un bon compromis entre rapidité et qualité.  
@@ -167,15 +167,7 @@ Dans le notebook `SD_VRP_projet.ipynb` :
 
 ---
 
-## 💡 Citation académique
-
-> Khalfa Y., Achbani I., Hamouch A., Yajjou R.  
-> *Optimisation combinatoire — Split Delivery Vehicle Routing Problem (SD-VRP)*,  
-> École Centrale Casablanca, Janvier 2025.
-
----
-
-## 🌟 Aperçu visuel (optionnel)
+##  Aperçu visuel (optionnel)
 
 ```mermaid
 graph LR
@@ -189,7 +181,7 @@ D --> E
 
 ---
 
-## 🪄 Animation du projet (badges dynamiques)
+##  Animation du projet (badges dynamiques)
 
 ![Visitors](https://komarev.com/ghpvc/?username=SD-VRP&label=Visiteurs)
 ![GitHub last commit](https://img.shields.io/github/last-commit/YoussefKhalfa/SD-VRP?color=orange)
@@ -206,5 +198,6 @@ Toute citation ou fork doit mentionner la source originale.
 ---
 
 ### 💬 Contact
-📧 `youssef.khalfa@etu.ec-lyon.fr`  
+📧 `youssef.khalfa@etu.ec-lyon.fr`  ou `youssef.khalfa1@gmail.com`
+📱+33 0745980437
 📍 Centrale Casablanca / Centrale Lyon
